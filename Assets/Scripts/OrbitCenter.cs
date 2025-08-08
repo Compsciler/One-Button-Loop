@@ -13,10 +13,6 @@ public class OrbitCenter : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    void Start()
-    {
-        SetIsActive(isActive);
-    }
     
     public void SetIsActive(bool active)
     {

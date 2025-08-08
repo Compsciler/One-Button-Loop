@@ -27,15 +27,15 @@ public class Player : MonoBehaviour
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        
-        orbitCenter = orbitCenter1.GetComponent<OrbitCenter>();
-        inactiveOrbitCenter = orbitCenter2.GetComponent<OrbitCenter>();
-        orbitCenter.SetIsActive(true);
-        inactiveOrbitCenter.SetIsActive(false);
     }
 
     void Start()
     {
+        orbitCenter = orbitCenter1.GetComponent<OrbitCenter>();
+        inactiveOrbitCenter = orbitCenter2.GetComponent<OrbitCenter>();
+        orbitCenter.SetIsActive(true);
+        inactiveOrbitCenter.SetIsActive(false);
+        
         radius = Vector2.Distance(transform.position, orbitCenter.transform.position);
     }
 
