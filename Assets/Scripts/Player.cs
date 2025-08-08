@@ -1,7 +1,6 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -41,10 +40,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
         if (Input.GetKeyDown(KeyCode.X))
         {
             usingConstantAngularSpeed = !usingConstantAngularSpeed;

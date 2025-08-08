@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] float destroyDistance = 20f;
 
     Vector3 direction;
+
+    public static event Action OnEnemyHitPlayer;
     
     void SetDirection(Vector2 direction)
     {
@@ -35,6 +37,7 @@ public class Enemy : MonoBehaviour
         if (other.TryGetComponent<Player>(out Player player))
         {
             Destroy(player.gameObject);
+            OnEnemyHitPlayer?.Invoke();
         }
     }
 }
