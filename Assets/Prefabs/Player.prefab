@@ -102,6 +102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   orbitRadiusStart: 1.5
-  orbitRadiusIncreaseSpeed: 1
-  orbitCenter: {fileID: 0}
-  orbitCenterAlternate: {fileID: 0}
+  orbitRadiusIncreaseSpeed: 1.5
+  orbitCenter1: {fileID: 0}
+  orbitCenter2: {fileID: 0}
